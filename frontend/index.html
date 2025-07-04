@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NewsMania</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="top-bar">
+    <h1>📰 NewsMania</h1>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search news...">
+      <button id="search-button">🔍</button>
+      <button id="view-saved">📌 Saved</button>
+      <button id="theme-toggle">🌓</button>
+      <button id="voice-button" title="Voice Search">🎤</button>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <select id="category">
+      <option value="general">📰 General</option>
+      <option value="technology">💻 Technology</option>
+      <option value="sports">⚽ Sports</option>
+      <option value="business">💼 Business</option>
+      <option value="health">🧠 Health</option>
+    </select>
+    <p class="category-label" id="category-label">Showing: General 📰</p>
+    <div id="news-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
